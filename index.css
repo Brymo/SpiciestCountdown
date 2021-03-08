@@ -1,0 +1,39 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+img{
+    width: 20vw;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.top-left{
+    position: absolute;
+    top:1vw;
+    left:1vw;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom:1vw;
+    right:1vw;
+}
+
+@keyframes spin{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}
+
+iframe{
+    width: 80vw;
+    max-height: 90vh;
+    height: calc(80vw/16 * 9);
+}
